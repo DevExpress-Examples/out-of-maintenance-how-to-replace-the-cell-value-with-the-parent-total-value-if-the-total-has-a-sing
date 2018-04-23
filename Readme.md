@@ -1,0 +1,13 @@
+# How to replace the cell value with the parent total value if the total has a single child
+
+
+<p>If you use the <a href="https://documentation.devexpress.com/#CoreLibraries/DevExpressDataPivotGridPivotSummaryDisplayTypeEnumtopic">PercentOfColumn</a> <a href="https://documentation.devexpress.com/#CoreLibraries/DevExpressXtraPivotGridPivotGridFieldBase_SummaryDisplayTypetopic">SummaryDisplayType</a>, it is sometimes necessary to show total values in the last level cells. Refer to the attached screenshot. Red cells show a percent of the corresponding total value, but since the total has a single nested cell, 100% is always shown. In this case, the only way to see the total value (a green cell ) is to collapse the corresponding row:</p>
+<img src="https://raw.githubusercontent.com/DevExpress-Examples/how-to-replace-the-cell-value-with-the-parent-total-value-if-the-total-has-a-single-child-t160905/14.1.7+/media/619192ea-5465-11e4-80ba-00155d624807.png"><br />
+<p>f you wish to always see total values, simply enable the <a href="https://documentation.devexpress.com/#CoreLibraries/DevExpressXtraPivotGridPivotGridOptionsViewBase_ShowTotalsForSingleValuestopic">PivotGrid.OptionsView.ShowTotalsForSingleValues Property</a>. In this case, total rows will be always shown:</p>
+<img src="https://raw.githubusercontent.com/DevExpress-Examples/how-to-replace-the-cell-value-with-the-parent-total-value-if-the-total-has-a-single-child-t160905/14.1.7+/media/1c16d5d6-5466-11e4-80ba-00155d624807.png"><br /><br />
+<p>However, these extra total rows take additional space. Sometimes it is better to show corresponding total values instead of the default cell value. This example demonstrates how to accomplish this task. <br /><img src="https://raw.githubusercontent.com/DevExpress-Examples/how-to-replace-the-cell-value-with-the-parent-total-value-if-the-total-has-a-single-child-t160905/14.1.7+/media/5b0aa2d9-5469-11e4-80ba-00155d624807.png"><br /><br />Note that this example uses our internal API to access all required information about the processed row. We do not update this API frequently but since these are our internal methods, we can change them without any notifications. It is necessary to test this functionality carefully on each version update.</p>
+<br /><br />
+
+<br/>
+
+
