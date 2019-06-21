@@ -6,6 +6,9 @@
 * [Default.aspx.cs](./CS/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/Default.aspx.vb))
 <!-- default file list end -->
 # How to replace the cell value with the parent total value if the total has a single child
+<!-- run online -->
+**[[Run Online]](https://codecentral.devexpress.com/t160905/)**
+<!-- run online end -->
 
 
 <p>If you use the <a href="https://documentation.devexpress.com/#CoreLibraries/DevExpressDataPivotGridPivotSummaryDisplayTypeEnumtopic">PercentOfColumn</a> <a href="https://documentation.devexpress.com/#CoreLibraries/DevExpressXtraPivotGridPivotGridFieldBase_SummaryDisplayTypetopic">SummaryDisplayType</a>, it is sometimes necessary to show total values in the last level cells. Refer to the attached screenshot. Red cells show a percent of the corresponding total value, but since the total has a single nested cell, 100% is always shown. In this case, the only way to see the total value (a green cell ) is to collapse the corresponding row:</p>
