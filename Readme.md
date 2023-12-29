@@ -1,8 +1,3 @@
-<!-- default badges list -->
-![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/128577746/14.1.7%2B)
-[![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T160905)
-[![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
-<!-- default badges end -->
 <!-- default file list -->
 *Files to look at*:
 
@@ -11,9 +6,6 @@
 * [Default.aspx.cs](./CS/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/Default.aspx.vb))
 <!-- default file list end -->
 # How to replace the cell value with the parent total value if the total has a single child
-<!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/t160905/)**
-<!-- run online end -->
 
 
 <p>If you use the <a href="https://documentation.devexpress.com/#CoreLibraries/DevExpressDataPivotGridPivotSummaryDisplayTypeEnumtopic">PercentOfColumn</a> <a href="https://documentation.devexpress.com/#CoreLibraries/DevExpressXtraPivotGridPivotGridFieldBase_SummaryDisplayTypetopic">SummaryDisplayType</a>, it is sometimes necessary to show total values in the last level cells. Refer to the attached screenshot. Red cells show a percent of the corresponding total value, but since the total has a single nested cell, 100% is always shown. In this case, the only way to see the total value (a green cell ) is to collapse the corresponding row:</p>
